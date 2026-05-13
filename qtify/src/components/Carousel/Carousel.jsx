@@ -1,63 +1,31 @@
-import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 import styles from "./Carousel.module.css";
 
 import Card from "../Card/Card";
 
-import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { IoIosArrowDropleftCircle } from "react-icons/io";
-
-
-
 const Carousel = ({ data }) => {
-  const carouselRef = useRef(null);
-
-  const scrollLeft = () => {
-    carouselRef.current.scrollBy({
-      left: -300,
-      behavior: "smooth",
-    });
-  };
-
-  const scrollRight = () => {
-    carouselRef.current.scrollBy({
-      left: 300,
-      behavior: "smooth",
-    });
-  };
-
   return (
-    <div className={styles.wrapper}>
-      <button
-        className={`${styles.arrow} ${styles.left}`}
-        onClick={scrollLeft}
-      >
-        <IoIosArrowDropleftCircle />
-      </button>
-
-      <div
-        className={styles.carousel}
-        ref={carouselRef}
-      >
-        {data.map((item) => (
-          <Card
-            key={item.id}
-            image={item.image}
-            title={item.title}
-            follows={item.follows}
-            onClick={() => console.log("clicked")}
-          />
-        ))}
-      </div>
-
-      <button
-        className={`${styles.arrow} ${styles.right}`}
-        onClick={scrollRight}
-      >
-        <IoIosArrowDroprightCircle />
-
-      </button>
-    </div>
+<Swiper
+  className={styles.swiper}
+  modules={[Navigation]}
+  navigation
+  spaceBetween={20}
+  slidesPerView={"auto"}
+>
+      {data.map((item) => (
+        <SwiperSlide
+          key={item.id}
+          className={styles.slide}
+        >
+          <Card data={item} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 

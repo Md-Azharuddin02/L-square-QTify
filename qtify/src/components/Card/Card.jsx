@@ -1,26 +1,24 @@
 import styles from "./Card.module.css";
 
-const Card = ({
-  image,
-  title,
-  follows,
-  onClick,
-}) => {
+const Card = ({ data }) => {
   return (
-    <div
-      className={styles.card}
-      onClick={onClick}
-    >
+    <div className={styles.card}>
       <div className={styles.imageWrapper}>
         <img
-          src={image}
-          alt={title}
+          src={data.image}
+          alt={data.title}
         />
 
-        <span>{follows} Follows</span>
+        <div className={styles.badge}>
+          {data.follows
+            ? `${data.follows} Follows`
+            : "100 Likes"}
+        </div>
       </div>
 
-      <p>{title}</p>
+      <p className={styles.title}>
+        {data.title}
+      </p>
     </div>
   );
 };

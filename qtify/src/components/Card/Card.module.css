@@ -1,18 +1,12 @@
 .card {
-  width: 170px;
-  flex-shrink: 0;
-    cursor: pointer;
-
+  width: 160px;
 }
 
 .imageWrapper {
-  background-color: var(--color-white);
+  position: relative;
 
   border-radius: 10px;
-
   overflow: hidden;
-
-  margin-bottom: 8px;
 }
 
 .imageWrapper img {
@@ -20,39 +14,27 @@
   height: 205px;
 
   object-fit: cover;
-
   display: block;
 }
 
-.imageWrapper span {
-  display: inline-block;
+.badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 
-  margin: 8px;
+  background-color: black;
+  color: white;
 
   padding: 6px 10px;
-
-  background-color: var(--color-black);
-  color: var(--color-white);
-
   border-radius: 20px;
 
-  font-size: 10px;
-  font-weight: 600;
-
-  line-height: 1;
+  font-size: 12px;
 }
 
-.card p {
-  color: var(--color-white);
+.title {
+  margin-top: 10px;
 
-  font-size: 16px;
-  font-weight: 400;
-
-  line-height: 1.4;
-
-  margin: 0;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
 }

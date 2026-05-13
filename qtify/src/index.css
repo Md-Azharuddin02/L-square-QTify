@@ -11,7 +11,10 @@
 }
 
 body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: var(--color-black);
   color: var(--color-white);
+  overflow-x: hidden;
+
 } 

@@ -1,8 +1,9 @@
 .section {
   padding: 32px;
+  background-color: #121212;
 }
 
-.top {
+.topRow {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,21 +11,14 @@
   margin-bottom: 24px;
 }
 
-.top h2 {
-  font-size: 20px;
-  font-weight: 600;
-
-  color: var(--color-white);
+.title {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
 }
 
-.top button {
-  border: none;
-  background: transparent;
-
-  color: var(--color-primary);
-
-  font-size: 16px;
+.showAll {
+  color: #34c94b;
   font-weight: 600;
-
   cursor: pointer;
 }
