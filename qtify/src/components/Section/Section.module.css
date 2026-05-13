@@ -1,0 +1,30 @@
+.section {
+  padding: 32px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.top h2 {
+  font-size: 20px;
+  font-weight: 600;
+
+  color: var(--color-white);
+}
+
+.top button {
+  border: none;
+  background: transparent;
+
+  color: var(--color-primary);
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}

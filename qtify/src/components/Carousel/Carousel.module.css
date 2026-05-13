@@ -1,0 +1,39 @@
+.wrapper {
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  gap: 24px;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 40%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  font-size: 32px;
+  color: var(--color-primary);
+}
+
+.left {
+  left: -16px;
+}
+
+.right {
+  right: -16px;
+}

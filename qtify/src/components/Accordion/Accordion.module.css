@@ -1,0 +1,50 @@
+.accordion {
+  border: 1px solid #ffffff50;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+
+  padding: 20px 24px;
+
+  background-color: var(--color-black);
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+.header span {
+  color: var(--color-white);
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header svg {
+  color: var(--color-primary);
+
+  font-size: 20px;
+}
+
+.body {
+  background-color: var(--color-white);
+
+  padding: 20px 24px;
+}
+
+.body p {
+  color: var(--color-black);
+
+  font-size: 16px;
+
+  line-height: 1.5;
+}

@@ -1,0 +1,25 @@
+.tabs {
+  display: flex;
+  gap: 24px;
+
+  margin-bottom: 24px;
+}
+
+.tabs button {
+  border: none;
+  background: transparent;
+
+  color: var(--color-white);
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.tabs button:first-child {
+  color: var(--color-primary);
+
+  border-bottom: 2px solid var(--color-primary);
+
+  padding-bottom: 6px;
+}

@@ -1,0 +1,22 @@
+.faq {
+  padding: 40px 80px;
+
+  background-color: var(--color-black);
+}
+
+.faq h2 {
+  text-align: center;
+
+  color: var(--color-white);
+
+  font-size: 40px;
+  font-weight: 600;
+
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
